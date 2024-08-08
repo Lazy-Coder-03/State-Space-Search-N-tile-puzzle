@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: flex;
+  margin: auto;
+  border: 3px solid #61dafb;
+  border-radius: 15px;
+}
+
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+
+button {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+select {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  width: 100%;
+}
+
+input[type="range"] {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  background-color: #61dafb;
+  border-radius: 5px;
+}
+
+#shuffleSlider {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+}
+
+#shuffleValue {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+
+#timeDisplay, #movesDisplay {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  margin-left: 5px;
+}

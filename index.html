@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>P5 sketch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main>
+      <div id="controls">
+        <button id="shuffleButton">Start Shuffling</button>
+        <button id="solveButton">Start Solving</button>
+        <select id="algorithmSelect">
+          <option value="bfs">BFS</option>
+          <option value="dfs">DFS</option>
+          <option value="bestfs">BestFS</option>
+          <option value="idfs">IDFS</option>
+          <option value="astar">A*</option>
+          <option value="ida">Iterative A*</option>
+        </select>
+        <div id="timeDisplay">Time Taken to find Solution: 0 ms</div>
+        <div id="movesDisplay">Number of Moves: 0</div>
+        <div>
+          <label for="showNumbersCheckbox">Show Numbers:</label>
+          <input type="checkbox" id="showNumbersCheckbox" checked />
+        </div>
+        <div>
+          <label for="shuffleSlider">Shuffle Moves: </label>
+          <input
+            type="range"
+            id="shuffleSlider"
+            min="0"
+            max="200"
+            step="25"
+            value="75"
+          />
+          <span id="shuffleValue">75</span>
+        </div>
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+    <script src="tile.js"></script>
+    <script src="puzzle.js"></script>
+    <script src="algs.js"></script>
+    <script src="helper.js"></script>
+  </body>
+</html>
